@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white ;
+    color: cc;
+}
+header {
+    background-color: #cf2ecf;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    background-color: r;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.intro, .portfolio-overview {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: rgb(25, 202, 69);
+}
+.portfolio-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.portfolio-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+.portfolio-item p {
+    font-size: 1rem;
+    color: #666;
+}
+footer {
+    background-color: #ccac1d;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 200px;
+    }
+    nav :hover{
+    color: yellow;
+}
+h1{
+    color: rgb(212, 19, 125);
+}
+
+nav {
+    background-color: orchid;
+    overflow: hidden;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    border-radius: 30px;
+    
+  }
+  .logo{
+    font-size: xx-large; 
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 170%;
+  }
+  
+  nav a:hover {
+    background-color: #14c44f;
+  }
+  
+  #nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Mobile styling */
+  @media (max-width: 768px) {
+    #nav-menu {
+      display: none; /* Hide menu by default on small screens */
+      flex-direction: column;
+      width: 100%;
+      background-color: orchid;
+      position: absolute;
+      top: 50px; /* Positioning the dropdown below the navbar */
+      left: 0;
+    }
+  
+    #nav-menu.active {
+      display: flex; /* Show the menu when the 'active' class is added */
+    }
+  
+    nav a {
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid #575757;
+    }
+  
+    .menu-icon {
+      display: block; /* Show the hamburger icon on mobile */
+    }
+  }
+  
+  
+  

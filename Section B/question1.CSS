@@ -1,79 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  nav {
-    background-color: orchid;
-    overflow: hidden;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    border-radius: 30px;
-    
-  }
-  .logo{
-    font-size: xx-large; 
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 170%;
-  }
-  
-  nav a:hover {
-    background-color: #14c44f;
-  }
-  
-  #nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  
-  
-
-@media (max-width: 768px) {
-  #nav-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: orchid;
-    position: absolute;
-    top: 50px; 
-    left: 0;
-  }
-
-  #nav-menu.active {
-    display: flex; 
-  }
-
-  nav a {
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    border-top: 1px solid #575757;
-  }
-
-  .menu-icon {
-    display: block; 
-  }
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 20px;
 }
 
 
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+  
